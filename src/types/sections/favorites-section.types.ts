@@ -26,6 +26,32 @@ export interface Book {
   url: string;
 }
 
+export interface Course {
+  /**
+   * [WEB] Book title.
+   */
+  title: string;
+
+  /**
+   * [WEB] Book cover.
+   *
+   * **Ratio**: 3:4
+   *
+   * **Display size**: 300x400px
+   */
+  image: Photo;
+
+  /**
+   * [WEB] Full name of the book author.
+   */
+  author: string;
+
+  /**
+   * [WEB] Website to buy the book or read more about it.
+   */
+  url: string;
+}
+
 export interface Person {
   /**
    * [WEB] Full name of the person.
@@ -111,6 +137,11 @@ export interface FavoritesSection extends Section {
    * [WEB] List of your favorite books.
    */
   books?: SubSection<Book>;
+
+  /**
+   * [WEB] List of your favorite courses.
+   */
+  courses?: SubSection<Course>;
 
   /**
    * [WEB] List of the people that inspire you.

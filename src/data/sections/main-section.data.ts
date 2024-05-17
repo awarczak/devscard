@@ -1,6 +1,6 @@
 import type { MainSection } from '@/types/sections/main-section.types';
 import type { ReadonlyDeep } from 'type-fest';
-import { facebook, github, linkedin, twitter } from '../helpers/links';
+import { linkedin } from '../helpers/links';
 
 const mainSectionData = {
   config: {
@@ -9,31 +9,34 @@ const mainSectionData = {
     slug: 'profile',
     visible: true,
   },
-  image: import('@/assets/my-image.jpeg'),
-  fullName: 'Mark Freeman',
-  role: 'Senior React Developer',
+  image: import('@/assets/profile-image.jpeg'),
+  fullName: 'Adrianna Warczak',
+  role: 'Frontend Engineer',
   details: [
-    { label: 'Phone', value: '605 475 6961', url: 'tel:605 475 6961' },
-    { label: 'Email', value: 'mark.freeman.dev@gmail.com', url: 'mailto:mark.freeman.dev@gmail.com' },
-    { label: 'From', value: 'Warsaw, Poland' },
-    { label: 'Salary range', value: '18 000 - 25 000 PLN' },
+    { label: 'Phone', value: '+48 503 474 632', url: 'tel:503474632' },
+    { label: 'Email', value: 'awarczak.dev@gmail.com', url: 'mailto:awarczak.dev@gmail.com' },
+    { label: 'From', value: 'Wrocław, Poland' },
+    // { label: 'Salary range', value: '18 000 - 25 000 PLN' },
   ],
   pdfDetails: [
-    { label: 'Phone', value: '605 475 6961' },
-    { label: 'Email', value: 'mark.freeman.dev@gmail.com' },
-    { label: 'LinkedIn', value: '/in/mark-freeman', url: 'https://linkedin.com' },
-    { label: 'GitHub', value: '/mark-freeman', url: 'https://github.com' },
-    { label: 'Website', value: 'mark-freeman-personal-website.com', url: '/', fullRow: true },
+    { label: 'Phone', value: '503 473 632' },
+    { label: 'Email', value: 'awarczak.dev@gmail.com' },
+    { label: 'LinkedIn', value: '/in/adrianna-warczak', url: 'https://linkedin.com' },
+    // { label: 'Website', value: 'mark-freeman-personal-website.com', url: '/', fullRow: true },
   ],
-  description:
-    'Lorem ipsum dolor sit amet, consectetur **adipiscing elit**. In sodales ac dui at *vestibulum*. In condimentum metus id dui tincidunt, in blandit mi [vehicula](/). Nulla lacinia, erat sit amet elementum vulputate, lectus mauris volutpat mi, vitae accumsan metus elit ut nunc. Vestibulum lacinia enim eget eros fermentum scelerisque. Proin augue leo, posuere ut imperdiet vitae, fermentum eu ipsum. Sed sed neque sagittis, posuere urna nec, commodo leo. Pellentesque posuere justo vitae massa volutpat maximus.',
-  tags: [{ name: 'Open for freelance' }, { name: 'Available for mentoring' }, { name: 'Working on side project' }],
+  description: `I've been creating web applications for <b>6 years</b>. I’m experienced in developing frontend applications using various technical stacks within the React.js ecosystem. For most of my career, I have been working with <b>greenfield/early-stage products</b> with a high level of business-developer collaboration. Outside of my commercial work, I actively engage in <b>non-profit organizations</b> related to web development, participate in conferences, and join hackathons. Some of the achievements in these areas that I am proudest of are listed in the sections below. Currently, I’m looking for a project where I can utilize my knowledge of <b>modern front-end architecture</b> and <b>DDD</b> to build something with a profound impact on people’s lives.`,
+  tags: [
+    {
+      icon: 'material-symbols:check-box-sharp',
+      name: 'I commit to support and follow the rules established by The Remote Manifesto',
+    },
+  ],
   action: {
     label: 'Download CV',
     url: '/cv.pdf',
-    downloadedFileName: 'CV-Mark_Freeman.pdf',
+    downloadedFileName: 'CV-Adrianna_Warczak.pdf',
   },
-  links: [facebook({ url: '#' }), github({ url: '#' }), linkedin({ url: '#' }), twitter({ url: '#' })],
+  links: [linkedin({ url: 'https://www.linkedin.com/in/adriannawarczak/' })],
 } as const satisfies ReadonlyDeep<MainSection>;
 
 export default mainSectionData;

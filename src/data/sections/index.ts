@@ -7,14 +7,15 @@ import mainData from './main-section.data';
 import portfolioData from './portfolio-section.data';
 import skillsData from './skills-section.data';
 import testimonialsData from './testimonials-section.data';
+import communityData from './community-section.data';
 
 export const sections = {
   main: mainData,
   skills: skillsData,
   experience: experienceData,
   portfolio: portfolioData,
+  community: communityData,
   education: educationData,
-  testimonials: testimonialsData,
   favorites: favoritesData,
 } as const satisfies ReadonlyDeep<Sections>;
 

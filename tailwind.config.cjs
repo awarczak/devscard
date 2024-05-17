@@ -12,6 +12,8 @@ module.exports = {
       white: colors.white,
       primary: colors.indigo,
       gray: colors.gray,
+      beige: '#DDB573',
+      beigeDark: '#cd9c4e',
     },
     extend: {
       spacing: {

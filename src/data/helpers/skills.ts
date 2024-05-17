@@ -117,14 +117,14 @@ export const prettier = createSkillFactory({
 });
 
 export const react = createSkillFactory({
-  name: 'React.js',
+  name: 'React',
   icon: 'simple-icons:react',
   iconColor: '#61DAFB',
   url: 'https://reactjs.org/',
 });
 
 export const reactQuery = createSkillFactory({
-  name: 'React Query',
+  name: 'Tanstack Query',
   icon: 'simple-icons:reactquery',
   iconColor: '#FF4154',
   url: 'https://tanstack.com/query',
@@ -158,9 +158,184 @@ export const typescript = createSkillFactory({
   url: 'https://www.typescriptlang.org/',
 });
 
+export const javascript = createSkillFactory({
+  name: 'JavaScript',
+  icon: 'logos:javascript',
+  iconColor: '#3178C6',
+  url: 'https://www.javascript.com/',
+});
+
 export const vue = createSkillFactory({
   name: 'Vue.js',
   icon: 'simple-icons:vuedotjs',
   iconColor: '#4FC08D',
   url: 'https://vuejs.org/',
+});
+
+export const jira = createSkillFactory({
+  name: 'Jira',
+  icon: 'cib:jira',
+  iconColor: '#FF5D01',
+  url: 'https://astro.build/',
+});
+
+export const css = createSkillFactory({
+  name: 'CSS',
+  icon: 'skill-icons:css',
+  iconColor: '#CC6699',
+  url: 'https://sass-lang.com/',
+});
+
+export const rtl = createSkillFactory({
+  name: 'React Testing Library',
+  icon: 'logos:testing-library',
+  iconColor: '#CC6699',
+  url: 'https://testing-library.com/docs/react-testing-library/intro/',
+});
+
+export const shadcn = createSkillFactory({
+  name: 'shadcn/ui',
+  icon: 'simple-icons:shadcnui',
+  iconColor: '#1c2024',
+  url: 'https://ui.shadcn.com/',
+});
+
+export const radixUI = createSkillFactory({
+  name: 'Radix UI',
+  icon: 'simple-icons:radixui',
+  iconColor: '#1c2024',
+  url: 'https://www.radix-ui.com/',
+});
+
+export const materialUI = createSkillFactory({
+  name: 'Material UI',
+  icon: 'logos:material-ui',
+  iconColor: '#CC6699',
+  url: 'https://mui.com/',
+});
+
+export const highcharts = createSkillFactory({
+  name: 'Highcharts',
+  icon: 'logos:highcharts',
+  iconColor: '#CC6699',
+  url: 'https://www.highcharts.com/',
+});
+
+export const mailgun = createSkillFactory({
+  name: 'Mailgun',
+  icon: 'logos:mailgun-icon',
+  iconColor: '#CC6699',
+  url: 'https://www.mailgun.com/',
+});
+
+export const mapbox = createSkillFactory({
+  name: 'Mapbox',
+  icon: 'logos:mapbox-icon',
+  iconColor: '#CC6699',
+  url: 'https://www.mapbox.com/',
+});
+
+export const figma = createSkillFactory({
+  name: 'Figma',
+  icon: 'logos:figma',
+  iconColor: '#CC6699',
+  url: 'https://www.figma.com/',
+});
+
+export const reactFlow = createSkillFactory({
+  name: 'React Flow',
+  icon: 'hugeicons:flow',
+  iconColor: '#CC6699',
+  url: 'https://reactflow.dev/',
+});
+
+export const redux = createSkillFactory({
+  name: 'Redux',
+  icon: 'logos:redux',
+  iconColor: '#CC6699',
+  url: 'https://redux.js.org/',
+});
+
+export const mobx = createSkillFactory({
+  name: 'Mobx',
+  icon: 'logos:redux',
+  iconColor: '#CC6699',
+  url: 'https://reactflow.dev/',
+});
+
+export const storybook = createSkillFactory({
+  name: 'Storybook',
+  icon: 'logos:storybook-icon',
+  iconColor: '#CC6699',
+  url: 'https://storybook.js.org/',
+});
+
+export const bootstrap = createSkillFactory({
+  name: 'Bootstrap',
+  icon: 'logos:bootstrap',
+  iconColor: '#CC6699',
+  url: 'https://getbootstrap.com/',
+});
+
+export const turborepo = createSkillFactory({
+  name: 'Turborepo',
+  icon: 'logos:turborepo-icon',
+  iconColor: '#CC6699',
+  url: 'https://turbo.build/',
+});
+
+export const vitest = createSkillFactory({
+  name: 'Vitest',
+  icon: 'logos:vitest',
+  iconColor: '#CC6699',
+  url: 'https://vitest.dev/',
+});
+
+export const zustand = createSkillFactory({
+  name: 'Zustand',
+  // icon: 'logos:vitest',
+  iconColor: '#CC6699',
+  url: 'https://zustand-demo.pmnd.rs/',
+});
+
+export const vite = createSkillFactory({
+  name: 'Vite',
+  icon: 'vscode-icons:file-type-vite',
+  iconColor: '#CC6699',
+  url: 'https://vitejs.dev/',
+});
+
+export const webpack = createSkillFactory({
+  name: 'Webpack',
+  icon: 'logos:webpack',
+  iconColor: '#CC6699',
+  url: 'https://webpack.js.org/',
+});
+
+export const apolloClient = createSkillFactory({
+  name: 'Apollo Client',
+  icon: 'logos:apollostack',
+  iconColor: '#CC6699',
+  url: 'https://www.apollographql.com/docs/react/',
+});
+
+export const tableau = createSkillFactory({
+  name: 'Tableau',
+  icon: 'logos:tableau-icon',
+  iconColor: '#CC6699',
+  url: 'https://www.tableau.com/',
+});
+
+export const d3 = createSkillFactory({
+  name: 'D3',
+  icon: 'logos:d3',
+  iconColor: '#CC6699',
+  url: 'https://d3js.org/',
+});
+
+export const leaflet = createSkillFactory({
+  name: 'Leaflet',
+  icon: 'simple-icons:leaflet',
+  iconColor: '#B7E263',
+  url: 'https://leafletjs.com/',
 });

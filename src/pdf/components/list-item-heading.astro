@@ -1,20 +1,23 @@
 ---
 import type { DateRange } from '@/types/shared';
 import DateRangeTag from './date-range-tag.astro';
+import DateDayTag from './date-day-tag.astro';
 
 export interface Props {
   title: string;
   subtitle?: string;
   dates: DateRange;
+  date: Date;
 }
 
-const { title, subtitle, dates } = Astro.props;
+const { title, subtitle, dates, date } = Astro.props;
 ---
 
 <div>
   <div class="flex items-start justify-between">
     <div class="text-lg font-extrabold text-gray-900">{title}</div>
-    <DateRangeTag class="mt-0.5" dates={dates} />
+    {dates && <DateRangeTag class="mt-0.5" dates={dates} />}
+    {date && <DateDayTag class="mt-0.5" date={date} />}
   </div>
   {subtitle && <div class="text-md -mt-0.5 font-medium text-gray-700">{subtitle}</div>}
 </div>

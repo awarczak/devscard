@@ -2,25 +2,26 @@ import type { PortfolioSection } from '@/types/sections/portfolio-section.types'
 import type { ReadonlyDeep } from 'type-fest';
 import { demo, github, mockups, website } from '../helpers/links';
 import {
-  chakraUi,
-  eslint,
-  firebase,
+  apolloClient,
+  bootstrap,
+  highcharts,
+  javascript,
   jest,
-  nestJs,
+  leaflet,
+  mapbox,
+  materialUI,
   nextJs,
-  nx,
-  pnpm,
-  postgreSql,
-  prettier,
   react,
-  sass,
+  reactFlow,
+  redux,
+  tableau,
   tailwindCss,
   typescript,
 } from '../helpers/skills';
 
 const portfolioSectionData = {
   config: {
-    title: 'Projects',
+    title: 'Commercial projects',
     slug: 'projects',
     icon: 'fa6-solid:rocket',
     visible: true,
@@ -31,97 +32,94 @@ const portfolioSectionData = {
   },
   projects: [
     {
-      name: 'Golden Bulls',
-      image: import('@/assets/portfolio/project-1.jpeg'),
-      dates: [new Date('2020-03'), null],
+      name: 'Inflowmatix',
+      dates: [new Date('2023-11'), null],
       details: [
-        { label: 'Team size', value: '1 person' },
-        { label: 'My role', value: ['Front-end Developer', 'Designer'] },
-        { label: 'Company', value: 'None' },
-        { label: 'Category', value: ['Web app', 'Open source'] },
+        { label: 'Team size', value: '9 people' },
+        { label: 'My role', value: ['Front-end Engineer'] },
+        { label: 'Company', value: 'Zaven' },
+        { label: 'Category', value: ['Web app'] },
       ],
-      pdfDetails: [
-        { label: 'Demo', value: 'https://golden-bulls-d73jd7.netlify.app', url: '#' },
-        { label: 'Repository', value: 'https://github.com/mark-freeman/golden-bulls', url: '#' },
-      ],
-      screenshots: [
-        { src: import('@/assets/portfolio/project-1-screenshot-1.jpg'), alt: 'First screenshot' },
-        { src: import('@/assets/portfolio/project-1-screenshot-2.jpg'), alt: 'Second screenshot' },
-        { src: import('@/assets/portfolio/project-1-screenshot-3.jpg'), alt: 'Third screenshot' },
-      ],
-      description:
-        'In tristique vulputate augue vel egestas. Quisque ac imperdiet tortor, at lacinia ex. Duis vel ex hendrerit, commodo odio sed, aliquam enim. Ut arcu nulla, tincidunt eget arcu eget, molestie vulputate nisi. Nunc malesuada leo et est iaculis facilisis.',
+      description: `
+      Working on a robust system for reporting the status of water network systems, equipped with anomaly detection capabilities and a user-friendly interface for data analysis.<br>
+      <b>My responsibilities included:</b>
+        - Leading the migration of legacy code to modern technologies for a water network analytics suite.
+        - Responsible for ongoing bug fixes and system optimizations.
+      `,
       tagsList: {
         title: 'Technologies',
-        tags: [nextJs(), sass(), pnpm(), eslint(), prettier()],
+        tags: [react(), javascript(), redux(), bootstrap(), leaflet(), jest()],
       },
-      links: [mockups({ url: '#' }), demo({ url: '#' })],
+      links: [],
     },
     {
-      name: 'TruQuest',
-      image: import('@/assets/portfolio/project-2.jpeg'),
-      dates: [new Date('2019-06'), new Date('2020-02')],
+      name: 'Web apps for managing energy on the construction site',
+      dates: [new Date('2021-04'), new Date('2023-10')],
       details: [
         { label: 'Team size', value: '7 people' },
-        { label: 'My role', value: ['Front-end Developer', 'Mobile Developer', 'Designer'] },
-        { label: 'Company', value: 'Facebook' },
-        { label: 'Category', value: ['Web app', 'Mobile app'] },
+        { label: 'My role', value: ['Front-end Engineer'] },
+        { label: 'Company', value: 'Zaven (outsourcing)' },
+        { label: 'Category', value: ['Web app'] },
       ],
-      pdfDetails: [
-        { label: 'Demo', value: 'https://tru-quest-ck7ea3.netlify.app', url: '#' },
-        { label: 'Repository', value: 'https://github.com/mark-freeman/tru-quest', url: '#' },
-      ],
-      description:
-        'Ut ultricies tortor at sodales aliquam. Vivamus metus ante, fringilla nec ligula in, suscipit rhoncus mauris. Praesent hendrerit velit odio, at accumsan urna faucibus convallis. Nunc at massa eget ligula volutpat dictum a sit amet libero. Vestibulum iaculis molestie maximus. In hac habitasse platea dictumst.',
+      description: `
+      I played a key role in the collaborative development of a greenfield applications for the second-largest power grid owner in Norway, focusing on monitoring and managing energy on construction sites. These applications support Norway’s goal for an emission-free construction industry in major cities by 2030.<br>
+      <b>My responsibilities included:</b>
+        - Developed a calendar-based scheduling system that allowed customers to understand and communicate their energy needs on the construction site.
+        - Developed an advanced interactive map that visualized data from the construction site.
+        - Created detailed overviews of projects and assets, and established a comprehensive event log.
+        - Implemented an administrative module for managing organizations, users, and their roles within the system.
+      `,
       tagsList: {
         title: 'Technologies',
-        tags: [react(), tailwindCss(), nestJs(), postgreSql()],
+        tags: [react(), typescript(), apolloClient(), materialUI(), highcharts(), mapbox(), reactFlow()],
+      },
+      links: [],
+    },
+    {
+      name: 'Landing page for the energy monitoring app',
+      // image: import('@/assets/portfolio/project-2.jpeg'),
+      dates: [new Date('2021-01'), new Date('2021-03')],
+      details: [
+        { label: 'Team size', value: '1 person' },
+        { label: 'My role', value: ['Front-end Engineer'] },
+        { label: 'Company', value: 'Zaven (outsourcing)' },
+        { label: 'Category', value: ['Website'] },
+      ],
+      pdfDetails: [],
+      description: `
+      <b>My responsibilities included:</b>
+        - Implemented a landing page.
+        - Integrated with <b><u>GraphCMS</u></b> for content management.
+        - Managed email and newsletter functionalities using <b><u>Mailgun</u></b>.`,
+      tagsList: {
+        title: 'Technologies',
+        tags: [nextJs(), typescript(), tailwindCss()],
       },
       links: [mockups({ url: '#' }), demo({ url: '#' })],
     },
     {
-      name: 'Software Chasers',
-      image: import('@/assets/portfolio/project-3.jpeg'),
-      dates: [new Date('2018-01'), new Date('2020-12')],
+      name: 'Web app managing waste disposal in Norway',
+      // image: import('@/assets/portfolio/project-3.jpeg'),
+      dates: [new Date('2019-11'), new Date('2020-12')],
       details: [
-        { label: 'Team size', value: '3 people' },
-        { label: 'My role', value: ['Front-end Developer', 'Designer'] },
-        { label: 'Company', value: 'None' },
-        { label: 'Category', value: ['Web app', 'Open source'] },
+        { label: 'Team size', value: '5 people' },
+        { label: 'My role', value: ['Front-end Engineer'] },
+        { label: 'Company', value: 'Zaven' },
+        { label: 'Category', value: ['Web app'] },
       ],
-      pdfDetails: [
-        { label: 'Demo', value: 'https://software-chasers-e82l8e.netlify.app', url: '#' },
-        { label: 'Repository', value: 'https://github.com/mark-freeman/software-chasers', url: '#' },
-      ],
-      description:
-        'Quisque id consectetur eros. In hac habitasse platea dictumst. Sed eu pulvinar orci. Mauris consequat, est in dignissim varius, neque nisl commodo mauris, id blandit risus justo eu nulla.',
+      pdfDetails: [],
+      description: `
+      <b>My responsibilities included:</b>
+      - Transformed a cumbersome desktop application into a modern web-based solution.
+      - Collaborated closely with the Product Designer and client to understand business needs and design the application (User Story Mapping)
+      - Was responsible for visual design, core feature implementation and integrating Tableau for advanced data visualization.
+      - Led the demo presentations for stakeholders.
+      `,
       tagsList: {
         title: 'Technologies',
-        tags: [react(), chakraUi(), typescript(), nx(), pnpm()],
+        tags: [react(), typescript(), redux(), materialUI(), tableau()],
       },
       links: [website({ url: '#' }), github({ url: '#' })],
-    },
-    {
-      name: 'Disco Ninjas',
-      image: import('@/assets/portfolio/project-4.jpeg'),
-      dates: [new Date('2016-05'), new Date('2018-07')],
-      details: [
-        { label: 'Team size', value: '11 people' },
-        { label: 'My role', value: 'Front-end Developer' },
-        { label: 'Company', value: 'Google' },
-        { label: 'Category', value: ['Mobile app', 'Open source'] },
-      ],
-      pdfDetails: [
-        { label: 'Demo', value: 'https://disco-ninjas-g321ol.netlify.app', url: '#' },
-        { label: 'Repository', value: 'https://github.com/mark-freeman/disco-ninjas', url: '#' },
-      ],
-      description:
-        'Praesent eu neque tortor. Vestibulum ac magna nisl. Vivamus massa sem, feugiat in pharetra non, convallis egestas purus. Ut consequat ullamcorper sem, in euismod nibh posuere ut. ',
-      tagsList: {
-        title: 'Technologies',
-        tags: [typescript(), jest(), firebase()],
-      },
-      links: [mockups({ url: '#' }), github({ url: '#' })],
     },
   ],
 } as const satisfies ReadonlyDeep<PortfolioSection>;
