@@ -1,0 +1,13 @@
+---
+import formatDate from '@/utils/format-date';
+import Typography from './typography.astro';
+
+export interface Props {
+  date: Date;
+}
+const { date } = Astro.props;
+---
+
+<Typography variant="item-subtitle-secondary">
+  {formatDate(date)}
+</Typography>
