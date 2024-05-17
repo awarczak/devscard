@@ -39,20 +39,16 @@ const skillsSectionData = {
   },
   skillSets: [
     {
-      title: 'General Technologies',
+      title: 'General',
       skills: [
         javascript({ level: 5 }),
         typescript({
           level: 5,
-          description: 'Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.',
         }),
         react({
           level: 5,
-          description:
-            'Proin ut erat sed massa tempus suscipit. Mauris efficitur nunc sem, nec scelerisque ligula bibendum ut.',
         }),
         nextJs({ level: 4 }),
-        vue({ level: 2 }),
       ],
     },
     {
@@ -61,7 +57,6 @@ const skillsSectionData = {
         css({ level: 5 }),
         sass({
           level: 4,
-          description: 'Nulla interdum pellentesque ultricies. Ut id eros commodo, ultrices ligula eu, elementum ante.',
         }),
         tailwindCss({ level: 5 }),
         bootstrap({ level: 4 }),
@@ -87,7 +82,7 @@ const skillsSectionData = {
       title: 'Tools & Practices',
       skills: [
         { icon: 'iconoir:agile', name: 'Agile (Scrum, Kanban)' },
-        { icon: 'tabler:cloud-cog', name: 'Rest API' },
+        { icon: 'tabler:cloud-cog', name: 'REST API' },
         { icon: 'fa6-brands:jira', name: 'Strategic DDD' },
         { icon: 'logos:jira', name: 'JIRA' },
         { icon: 'devicon:git', name: 'GIT' },

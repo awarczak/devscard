@@ -3,7 +3,7 @@ import type { ReadonlyDeep } from 'type-fest';
 
 const favoritesSectionData = {
   config: {
-    title: 'Currently learning',
+    title: 'Favorites',
     slug: 'learning',
     icon: 'fa6-solid:star',
     visible: true,

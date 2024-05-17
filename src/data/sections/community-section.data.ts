@@ -4,7 +4,7 @@ import { materialUI, figma, react, typescript, javascript, css } from '../helper
 
 const communitySectionData = {
   config: {
-    title: 'Community Engagement',
+    title: 'Non-profit Activities',
     slug: 'community',
     icon: 'fluent:people-team-16-filled',
     visible: true,
@@ -16,9 +16,11 @@ const communitySectionData = {
   pdfDetails: [],
   communityProjects: [
     {
-      name: 'Hackathons',
-      description: `<b>April 2023</b> - 6. Bydgoski Hackathon - Winner
-      <b>November 2018</b> - Let's Code 2018 by Sii - Winner
+      name: 'Talks & Hackathons',
+      description: `
+      - <b>April 2023</b> - winning 6. Bydgoski Hackathon by creating AI application that supports elderly people.
+      - <b>November 2020</b> - giving a speech at DevMastery Festival about methods for effective form validation in React.
+      - <b>November 2018</b> -  winning local and national editions of Let’s Code by Sii. We created event recommendation app directed at Wroclaw citizens.
       `,
       tagsList: {
         title: 'Technologies',
@@ -26,27 +28,18 @@ const communitySectionData = {
       },
     },
     {
-      name: 'Talks',
-      date: new Date('2020-11'),
-      description: `Speaker at the DevMastery Festival - <i>Jak walidować formularze w React?</i>`,
-      tagsList: {
-        title: 'Technologies',
-        tags: [react()],
-      },
-    },
-    {
       name: 'Coders Crew',
       image: import('@/assets/logos/cc.png'),
-      dates: [new Date('2017-11'), new Date('2021-11')],
+      dates: [new Date('2017-11'), null],
       description: `
-      Involved in a non-profit organization that expanded its membership from 16 to 143.<br>
+      I contributed to the organization's growth from 16 to over one hundred members. Currently, I engage in its activities as an honorary member.<br>
       <b>My responsibilities included:</b>
-        - Conducted internal workshops on HTML, CSS, and JavaScript technologies.
-        - Served as a mentor for a complimentary beginner-level programming course, offering guidance and assistance to students.
-        - Managed promotional and administrative activities related to recruitment for the organization.
-        - Implemented projects based on the Scrum methodology.
-        - Established cooperation with other scientific circles.
-        - Participated in numerous hackathons.
+        - Conducting internal workshops on HTML, CSS, and JavaScript technologies.
+        - Serving as a mentor for a complimentary beginner-level programming course <b>CodersCamp</b>, offering guidance and assistance to students.
+        - Managing promotional and administrative activities related to recruitment for the organization.
+        - Implementing projects based on the Scrum methodology.
+        - Establishing cooperation with other scientific circles.
+        - Participating in numerous hackathons.
       `,
       tagsList: {
         title: 'Technologies',

@@ -242,6 +242,19 @@ export const figma = createSkillFactory({
   url: 'https://www.figma.com/',
 });
 
+export const adobePremiere = createSkillFactory({
+  name: 'Adobe Premiere Pro',
+  icon: 'logos:adobe-premiere',
+  iconColor: '#CC6699',
+  url: 'https://www.adobe.com/products/premiere.html',
+});
+
+export const ddd = createSkillFactory({
+  name: 'Domain Driven Design',
+  icon: 'ion:cube-outline',
+  iconColor: '#CC6699',
+});
+
 export const reactFlow = createSkillFactory({
   name: 'React Flow',
   icon: 'hugeicons:flow',
@@ -293,7 +306,7 @@ export const vitest = createSkillFactory({
 
 export const zustand = createSkillFactory({
   name: 'Zustand',
-  // icon: 'logos:vitest',
+  icon: 'noto:bear',
   iconColor: '#CC6699',
   url: 'https://zustand-demo.pmnd.rs/',
 });

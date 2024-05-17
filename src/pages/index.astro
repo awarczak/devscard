@@ -8,7 +8,6 @@ import ExperienceSection from '@/web/sections/experience/experience-section.web.
 import PortfolioSection from '@/web/sections/portfolio/portfolio-section.web.astro';
 import EducationSection from '@/web/sections/education/education-section.web.astro';
 import TestimonialsSection from '@/web/sections/testimonials/testimonials-section.web.astro';
-import FavoritesSection from '@/web/sections/favorites/favorites-section.web.astro';
 import CommunitySection from '@/web/sections/community/community-section.web.astro';
 import cv from '@/data';
 
@@ -24,7 +23,6 @@ const { config, sections } = cv();
     <PortfolioSection {...sections.portfolio} />
     <CommunitySection {...sections.community} />
     <EducationSection {...sections.education} />
-    <FavoritesSection {...sections.favorites} />
   </main>
   <Sidebar sections={sections} className="sticky top-8 mt-20" />
   <script src="../web/scripts/initialize-tooltips.ts"></script>

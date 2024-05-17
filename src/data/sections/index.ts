@@ -16,7 +16,6 @@ export const sections = {
   portfolio: portfolioData,
   community: communityData,
   education: educationData,
-  favorites: favoritesData,
 } as const satisfies ReadonlyDeep<Sections>;
 
 export default sections;

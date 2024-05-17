@@ -4,6 +4,7 @@ import { demo, github, mockups, website } from '../helpers/links';
 import {
   apolloClient,
   bootstrap,
+  cypress,
   highcharts,
   javascript,
   jest,
@@ -14,6 +15,7 @@ import {
   react,
   reactFlow,
   redux,
+  rtl,
   tableau,
   tailwindCss,
   typescript,
@@ -64,14 +66,25 @@ const portfolioSectionData = {
       description: `
       I played a key role in the collaborative development of a greenfield applications for the second-largest power grid owner in Norway, focusing on monitoring and managing energy on construction sites. These applications support Norway’s goal for an emission-free construction industry in major cities by 2030.<br>
       <b>My responsibilities included:</b>
-        - Developed a calendar-based scheduling system that allowed customers to understand and communicate their energy needs on the construction site.
-        - Developed an advanced interactive map that visualized data from the construction site.
-        - Created detailed overviews of projects and assets, and established a comprehensive event log.
-        - Implemented an administrative module for managing organizations, users, and their roles within the system.
+        - Developing a calendar-based scheduling system that allows customers to understand and communicate their energy needs on the construction site.
+        - Developing an advanced interactive map that visualizes data from the construction site.
+        - Creating detailed overviews of projects and assets, and establishing a comprehensive event log.
+        - Implementing an administrative module for managing organizations, users, and their roles within the system.
       `,
       tagsList: {
         title: 'Technologies',
-        tags: [react(), typescript(), apolloClient(), materialUI(), highcharts(), mapbox(), reactFlow()],
+        tags: [
+          react(),
+          typescript(),
+          apolloClient(),
+          materialUI(),
+          highcharts(),
+          mapbox(),
+          reactFlow(),
+          jest(),
+          rtl(),
+          cypress(),
+        ],
       },
       links: [],
     },
@@ -88,9 +101,9 @@ const portfolioSectionData = {
       pdfDetails: [],
       description: `
       <b>My responsibilities included:</b>
-        - Implemented a landing page.
-        - Integrated with <b><u>GraphCMS</u></b> for content management.
-        - Managed email and newsletter functionalities using <b><u>Mailgun</u></b>.`,
+        - Implementing a landing page.
+        - Integrating with <b><u>GraphCMS</b></u> for content management.
+        - Managing email and newsletter functionalities using <b><u>Mailgun</u></b>.`,
       tagsList: {
         title: 'Technologies',
         tags: [nextJs(), typescript(), tailwindCss()],
@@ -110,14 +123,14 @@ const portfolioSectionData = {
       pdfDetails: [],
       description: `
       <b>My responsibilities included:</b>
-      - Transformed a cumbersome desktop application into a modern web-based solution.
-      - Collaborated closely with the Product Designer and client to understand business needs and design the application (User Story Mapping)
-      - Was responsible for visual design, core feature implementation and integrating Tableau for advanced data visualization.
-      - Led the demo presentations for stakeholders.
+      - Transforming a cumbersome desktop application into a modern web-based solution.
+      - Collaborating closely with the Product Designer and client to understand business needs and design the application (User Story Mapping).
+      - Being responsible for visual design, core feature implementation, and integrating Tableau for data visualization.
+      - Leading demo presentations for stakeholders.
       `,
       tagsList: {
         title: 'Technologies',
-        tags: [react(), typescript(), redux(), materialUI(), tableau()],
+        tags: [react(), typescript(), redux(), materialUI(), tableau(), jest(), rtl()],
       },
       links: [website({ url: '#' }), github({ url: '#' })],
     },
