@@ -16,7 +16,7 @@ const educationSectionData = {
       image: import('@/assets/logos/wroclaw-university-of-technology.jpg'),
       dates: [new Date('2017.10'), new Date('2023.01')],
       description: "Engineer's degree. Specialization in Management Engineering – Information Technology in Business.",
-      links: [website({ url: '#' })],
+      links: [website({ url: 'https://pwr.edu.pl/' })],
     },
   ],
 } as const satisfies ReadonlyDeep<EducationSection>;

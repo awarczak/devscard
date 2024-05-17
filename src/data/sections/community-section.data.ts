@@ -1,6 +1,7 @@
 import type { CommunitySection } from '@/types/sections/community-section.types';
 import type { ReadonlyDeep } from 'type-fest';
 import { materialUI, figma, react, typescript, javascript, css } from '../helpers/skills';
+import { website } from '../helpers/links';
 
 const communitySectionData = {
   config: {
@@ -45,6 +46,7 @@ const communitySectionData = {
         title: 'Technologies',
         tags: [css(), javascript(), typescript(), react()],
       },
+      links: [website({ url: 'https://coderscrew.pl/' })],
     },
   ],
 } as const satisfies ReadonlyDeep<CommunitySection>;

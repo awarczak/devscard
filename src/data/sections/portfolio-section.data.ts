@@ -1,14 +1,10 @@
 import type { PortfolioSection } from '@/types/sections/portfolio-section.types';
 import type { ReadonlyDeep } from 'type-fest';
-import { demo, github, mockups, website } from '../helpers/links';
 import {
   apolloClient,
-  bootstrap,
   cypress,
   highcharts,
-  javascript,
   jest,
-  leaflet,
   mapbox,
   materialUI,
   nextJs,
@@ -90,7 +86,6 @@ const portfolioSectionData = {
     },
     {
       name: 'Landing page for the energy monitoring app',
-      // image: import('@/assets/portfolio/project-2.jpeg'),
       dates: [new Date('2021-01'), new Date('2021-03')],
       details: [
         { label: 'Team size', value: '1 person' },
@@ -108,11 +103,10 @@ const portfolioSectionData = {
         title: 'Technologies',
         tags: [nextJs(), typescript(), tailwindCss()],
       },
-      links: [mockups({ url: '#' }), demo({ url: '#' })],
+      links: [],
     },
     {
       name: 'Web app managing waste disposal in Norway',
-      // image: import('@/assets/portfolio/project-3.jpeg'),
       dates: [new Date('2019-11'), new Date('2020-12')],
       details: [
         { label: 'Team size', value: '5 people' },
@@ -132,7 +126,7 @@ const portfolioSectionData = {
         title: 'Technologies',
         tags: [react(), typescript(), redux(), materialUI(), tableau(), jest(), rtl()],
       },
-      links: [website({ url: '#' }), github({ url: '#' })],
+      links: [],
     },
   ],
 } as const satisfies ReadonlyDeep<PortfolioSection>;
