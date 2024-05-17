@@ -83,7 +83,7 @@ const skillsSectionData = {
       skills: [
         { icon: 'iconoir:agile', name: 'Agile (Scrum, Kanban)' },
         { icon: 'tabler:cloud-cog', name: 'REST API' },
-        { icon: 'fa6-brands:jira', name: 'Strategic DDD' },
+        { icon: 'ion:cube-outline', name: 'Strategic DDD' },
         { icon: 'logos:jira', name: 'JIRA' },
         { icon: 'devicon:git', name: 'GIT' },
         { icon: 'skill-icons:vite-dark', name: 'Vite' },
