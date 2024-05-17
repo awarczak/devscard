@@ -33,27 +33,27 @@ const portfolioSectionData = {
     },
   },
   projects: [
-    {
-      name: 'Inflowmatix',
-      dates: [new Date('2023-11'), null],
-      details: [
-        { label: 'Team size', value: '9 people' },
-        { label: 'My role', value: ['Front-end Engineer'] },
-        { label: 'Company', value: 'Zaven' },
-        { label: 'Category', value: ['Web app'] },
-      ],
-      description: `
-      Working on a robust system for reporting the status of water network systems, equipped with anomaly detection capabilities and a user-friendly interface for data analysis.<br>
-      <b>My responsibilities included:</b>
-        - Leading the migration of legacy code to modern technologies for a water network analytics suite.
-        - Responsible for ongoing bug fixes and system optimizations.
-      `,
-      tagsList: {
-        title: 'Technologies',
-        tags: [react(), javascript(), redux(), bootstrap(), leaflet(), jest()],
-      },
-      links: [],
-    },
+    // {
+    //   name: 'Inflowmatix',
+    //   dates: [new Date('2023-11'), null],
+    //   details: [
+    //     { label: 'Team size', value: '9 people' },
+    //     { label: 'My role', value: ['Front-end Engineer'] },
+    //     { label: 'Company', value: 'Zaven' },
+    //     { label: 'Category', value: ['Web app'] },
+    //   ],
+    //   description: `
+    //   Working on a robust system for reporting the status of water network systems, equipped with anomaly detection capabilities and a user-friendly interface for data analysis.<br>
+    //   <b>My responsibilities included:</b>
+    //     - Leading the migration of legacy code to modern technologies for a water network analytics suite.
+    //     - Responsible for ongoing bug fixes and system optimizations.
+    //   `,
+    //   tagsList: {
+    //     title: 'Technologies',
+    //     tags: [react(), javascript(), redux(), bootstrap(), leaflet(), jest()],
+    //   },
+    //   links: [],
+    // },
     {
       name: 'Web apps for managing energy on the construction site',
       dates: [new Date('2021-04'), new Date('2023-10')],

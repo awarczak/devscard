@@ -35,7 +35,7 @@ const experienceSectionData = {
       dates: [new Date('2019-11'), null],
       description: `
         - Collaborating with clients to establish current business needs and future goals.
-        - Designing and implementing applications focused on green energy, recycling, and construction site management.
+        - Designing and implementing applications focused on water network monitoring, green energy, recycling, and construction site management.
         - Leading demonstration meetings to present project progress and gather feedback from clients.
         - Performing field testing to understand users' needs and identify areas for improvement.
         - Conducting code reviews and mentoring junior developers.
