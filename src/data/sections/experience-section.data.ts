@@ -35,7 +35,7 @@ const experienceSectionData = {
       description: `
         - Collaborating with clients to establish current business needs and future goals.
         - Designing and implementing applications focused on water network monitoring, green energy, recycling, and construction site management.
-        - Leading demonstration meetings to present project progress and gather feedback from clients.
+        - Leading demo meetings to present project progress and gather feedback from clients.
         - Performing field testing to understand users' needs and identify areas for improvement.
         - Conducting code reviews and mentoring junior developers.
         - Leading the migration of legacy projects to modern technologies.
