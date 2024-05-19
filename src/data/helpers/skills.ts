@@ -189,7 +189,7 @@ export const vue = createSkillFactory({
 export const jira = createSkillFactory({
   name: 'Jira',
   icon: 'cib:jira',
-  iconColor: '#FF5D01',
+  iconColor: '#2480F7',
   url: 'https://www.atlassian.com/software/jira',
 });
 
