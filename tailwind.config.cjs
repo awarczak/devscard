@@ -14,6 +14,7 @@ module.exports = {
       gray: colors.gray,
       beige: '#DDB573',
       beigeDark: '#cd9c4e',
+      beigeDarker: '#94794f',
     },
     extend: {
       spacing: {

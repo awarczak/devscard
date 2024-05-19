@@ -200,6 +200,76 @@ export const css = createSkillFactory({
   // url: 'https://sass-lang.com/',
 });
 
+export const git = createSkillFactory({
+  name: 'GIT',
+  icon: 'devicon:git',
+  iconColor: '#CC6699',
+  url: 'https://git-scm.com/',
+});
+
+export const salesforce = createSkillFactory({
+  name: 'CRM (Salesforce)',
+  icon: 'logos:salesforce',
+  iconColor: '#00A1E0',
+  url: 'https://www.salesforce.com/',
+});
+
+export const photoshop = createSkillFactory({
+  name: 'Adobe Photoshop',
+  icon: 'logos:adobe-photoshop',
+  iconColor: '#31A8FF',
+  url: 'https://www.adobe.com/products/photoshop.html',
+});
+
+export const premierePro = createSkillFactory({
+  name: 'Adobe Premiere Pro',
+  icon: 'logos:adobe-premiere',
+  iconColor: '#9999FF',
+  url: 'https://www.adobe.com/products/premiere.html',
+});
+
+export const capcut = createSkillFactory({
+  name: 'Capcut',
+  icon: 'hugeicons:capcut',
+  iconColor: '#000000',
+  url: 'https://www.capcut.com/',
+});
+
+export const agile = createSkillFactory({
+  name: 'Agile (Scrum, Kanban)',
+  icon: 'iconoir:agile',
+  iconColor: '#2C3E50',
+  url: 'https://www.agilealliance.org/',
+});
+
+export const restApi = createSkillFactory({
+  name: 'REST API',
+  icon: 'tabler:cloud-cog',
+  iconColor: '#FF6B6B',
+  url: 'https://restfulapi.net/',
+});
+
+export const strategicDDD = createSkillFactory({
+  name: 'Strategic DDD',
+  icon: 'ion:cube-outline',
+  iconColor: '#007ACC',
+  url: 'https://domainlanguage.com/ddd/',
+});
+
+export const jamstack = createSkillFactory({
+  name: 'Jamstack',
+  icon: 'logos:jamstack-icon',
+  iconColor: '#F0047F',
+  url: 'https://jamstack.org/',
+});
+
+export const atomicDesign = createSkillFactory({
+  name: 'Atomic Design',
+  icon: 'logos:atomicojs-icon',
+  iconColor: '#50B4E6',
+  url: 'http://bradfrost.com/blog/post/atomic-web-design/',
+});
+
 export const rtl = createSkillFactory({
   name: 'React Testing Library',
   icon: 'logos:testing-library',

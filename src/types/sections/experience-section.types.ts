@@ -40,6 +40,8 @@ export interface Job {
    * [WEB] Links related to your job (e.g. production app, company's website, project website).
    */
   links: LinkButton[];
+
+  url?: string;
 }
 
 export interface ExperienceSection extends Section {

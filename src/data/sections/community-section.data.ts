@@ -19,8 +19,8 @@ const communitySectionData = {
     {
       name: 'Talks & Hackathons',
       description: `
-      - <b>April 2023</b> - winning 6. Bydgoski Hackathon by creating AI application that supports elderly people.
-      - <b>November 2020</b> - giving a speech at DevMastery Festival about methods for effective form validation in React.
+      - <b>April 2023</b> - Winning the 6th Bydgoski Hackathon by creating an AI application that supports elderly people.
+      - <b>November 2020</b> - giving a speech at the DevMastery Festival about methods for effective form validation in React.
       - <b>November 2018</b> -  winning local and national editions of Let’s Code by Sii. We created event recommendation app directed at Wroclaw citizens.
       `,
       tagsList: {
@@ -38,6 +38,7 @@ const communitySectionData = {
         - Conducting workshops on frontend-related technologies and practices in Wroclaw’s Innovations Center.
         - Serving as a mentor for a complimentary beginner-level programming course <b>CodersCamp</b>, offering guidance and assistance to students.
         - Managing promotional and administrative activities related to recruitment for the organization.
+        - Creating the previous version of the CodersCrew website using React.
         - Implementing projects based on the Scrum methodology.
         - Establishing cooperation with other scientific circles.
         - Participating in numerous hackathons.

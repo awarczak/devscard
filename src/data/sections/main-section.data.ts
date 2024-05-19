@@ -29,7 +29,7 @@ const mainSectionData = {
   `,
   tags: [],
   action: {
-    label: 'Download CV',
+    label: 'Download CV in .pdf',
     url: '/cv.pdf',
     downloadedFileName: 'CV-Adrianna_Warczak.pdf',
   },
