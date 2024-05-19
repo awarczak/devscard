@@ -78,8 +78,8 @@ const skillsSectionData = {
         bootstrap({ level: 4 }),
         materialUI({ level: 4 }),
         storybook({ level: 3 }),
-        radixUI({ level: 2 }),
-        shadcn({ level: 2 }),
+        radixUI({ level: 3 }),
+        shadcn({ level: 3 }),
       ],
     },
     {
