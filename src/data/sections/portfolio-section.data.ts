@@ -62,10 +62,10 @@ const portfolioSectionData = {
       description: `
       I played a key role in the collaborative development of a greenfield applications for the second-largest power grid owner in Norway, focusing on monitoring and managing energy on construction sites. These applications support Norway’s goal for an emission-free construction industry in major cities by 2030.<br>
       <b>My responsibilities included:</b>
-        - Developing a calendar-based scheduling system that allows customers to understand and communicate their energy needs on the construction site.
         - Developing an advanced interactive map that visualizes data from the construction site.
         - Creating detailed overviews of projects and assets, and establishing a comprehensive event log.
         - Implementing an administrative module for managing organizations, users, and their roles within the system.
+        - Developing a calendar-based scheduling system that allows customers to understand and communicate their energy needs on the construction site.
       `,
       tagsList: {
         title: 'Technologies',

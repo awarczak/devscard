@@ -13,14 +13,13 @@ const experienceSectionData = {
   jobs: [
     {
       role: 'E-learning Content Assistant for Domain Drivers course',
-      company: 'DevStyle',
+      company: 'DevStyle (remote)',
       image: import('@/assets/logos/dd.png'),
       dates: [new Date('2024-02'), null],
       description: `
-      - Ensuring the quality of the online training course Domain Drivers.
       - Reviewing materials for accuracy and relevance.
       - Assisting in the preparation of graphic materials and video editing.
-
+      - Responsible for preparing subtitles and transcriptions for videos.
       `,
       tagsList: {
         title: 'Tools',
@@ -30,7 +29,7 @@ const experienceSectionData = {
     },
     {
       role: 'Frontend Engineer',
-      company: 'Zaven',
+      company: 'Zaven (remote)',
       image: import('@/assets/logos/zaven.png'),
       dates: [new Date('2019-11'), null],
       description: `
@@ -42,16 +41,17 @@ const experienceSectionData = {
         - Leading the migration of legacy projects to modern technologies.
         - Facilitating internal meetings to establish best practices and improve the development process.
         - Developing end-to-end testing strategies within the team.
+        - Implementing app internalization features including continuous integration with localization management platforms.
       `,
       tagsList: {
         title: 'Main Technologies',
         tags: [react(), typescript()],
       },
-      links: [website({ url: 'https://zaven.co/' }), instagram({ url: 'https://www.instagram.com/zaven.co/' })],
+      links: [website({ url: 'https://zaven.co/' })],
     },
     {
       role: 'Junior Frontend Engineer',
-      company: 'Antologic',
+      company: 'Antologic (onsite)',
       image: import('@/assets/logos/antologic.png'),
       dates: [new Date('2019-09'), new Date('2019-11')],
       description: `- Involving in the development of a web application that enables hotel owners to efficiently manage their bookings.`,

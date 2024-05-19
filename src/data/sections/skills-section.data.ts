@@ -16,7 +16,6 @@ import {
   highcharts,
   mapbox,
   materialUI,
-  vue,
   reactFlow,
   redux,
   storybook,
@@ -28,6 +27,8 @@ import {
   bootstrap,
   leaflet,
   apolloClient,
+  formik,
+  reactHookForm,
 } from '../helpers/skills';
 
 const skillsSectionData = {
@@ -55,15 +56,15 @@ const skillsSectionData = {
       title: 'Styling',
       skills: [
         css({ level: 5 }),
+        tailwindCss({ level: 5 }),
         sass({
           level: 4,
         }),
-        tailwindCss({ level: 5 }),
         bootstrap({ level: 4 }),
         materialUI({ level: 4 }),
+        storybook({ level: 3 }),
         radixUI({ level: 2 }),
         shadcn({ level: 2 }),
-        storybook({ level: 3 }),
       ],
     },
     {
@@ -71,31 +72,31 @@ const skillsSectionData = {
       skills: [redux({ level: 3 }), reactQuery({ level: 3 }), apolloClient({ level: 3 }), zustand({ level: 1 })],
     },
     {
-      title: 'Data Visualization',
-      skills: [highcharts(), reactFlow(), mapbox(), leaflet()],
-    },
-    {
       title: 'Testing',
       skills: [jest(), cypress(), rtl()],
     },
     {
+      title: 'Other',
+      skills: [highcharts(), reactFlow(), mapbox(), leaflet(), formik(), reactHookForm()],
+    },
+    {
       title: 'Tools & Practices',
       skills: [
-        { icon: 'iconoir:agile', name: 'Agile (Scrum, Kanban)' },
-        { icon: 'tabler:cloud-cog', name: 'REST API' },
-        { icon: 'ion:cube-outline', name: 'Strategic DDD' },
         { icon: 'logos:jira', name: 'JIRA' },
         { icon: 'devicon:git', name: 'GIT' },
         { icon: 'skill-icons:vite-dark', name: 'Vite' },
         { icon: 'logos:webpack', name: 'Webpack' },
         { icon: 'logos:salesforce', name: 'CRM (Salesforce)' },
         { icon: 'logos:tableau-icon', name: 'Tableau' },
-        { icon: 'logos:jamstack-icon', name: 'Jamstack' },
-        { icon: 'logos:atomicojs-icon', name: 'Atomic Design' },
         { icon: 'logos:figma', name: 'Figma' },
         { icon: 'logos:adobe-photoshop', name: 'Adobe Photoshop' },
         { icon: 'logos:adobe-premiere', name: 'Adobe Premiere Pro' },
         { icon: 'hugeicons:capcut', name: 'Capcut' },
+        { icon: 'iconoir:agile', name: 'Agile (Scrum, Kanban)' },
+        { icon: 'tabler:cloud-cog', name: 'REST API' },
+        { icon: 'ion:cube-outline', name: 'Strategic DDD' },
+        { icon: 'logos:jamstack-icon', name: 'Jamstack' },
+        { icon: 'logos:atomicojs-icon', name: 'Atomic Design' },
       ],
     },
     {

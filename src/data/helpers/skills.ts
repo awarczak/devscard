@@ -32,6 +32,20 @@ export const astro = createSkillFactory({
   url: 'https://astro.build/',
 });
 
+export const formik = createSkillFactory({
+  name: 'Formik',
+  icon: 'simple-icons:formspree',
+  iconColor: '#2463EB',
+  url: 'https://formik.org/',
+});
+
+export const reactHookForm = createSkillFactory({
+  name: 'React Hook Form',
+  icon: 'simple-icons:reacthookform',
+  iconColor: '#EC5990',
+  url: 'https://react-hook-form.com/',
+});
+
 export const chakraUi = createSkillFactory({
   name: 'Chakra UI',
   icon: 'simple-icons:chakraui',
@@ -176,14 +190,14 @@ export const jira = createSkillFactory({
   name: 'Jira',
   icon: 'cib:jira',
   iconColor: '#FF5D01',
-  url: 'https://astro.build/',
+  url: 'https://www.atlassian.com/software/jira',
 });
 
 export const css = createSkillFactory({
   name: 'CSS',
   icon: 'skill-icons:css',
   iconColor: '#CC6699',
-  url: 'https://sass-lang.com/',
+  // url: 'https://sass-lang.com/',
 });
 
 export const rtl = createSkillFactory({
@@ -267,13 +281,6 @@ export const redux = createSkillFactory({
   icon: 'logos:redux',
   iconColor: '#CC6699',
   url: 'https://redux.js.org/',
-});
-
-export const mobx = createSkillFactory({
-  name: 'Mobx',
-  icon: 'logos:redux',
-  iconColor: '#CC6699',
-  url: 'https://reactflow.dev/',
 });
 
 export const storybook = createSkillFactory({

@@ -29,13 +29,13 @@ const communitySectionData = {
       },
     },
     {
-      name: 'Coders Crew',
+      name: 'CodersCrew',
       image: import('@/assets/logos/cc.png'),
       dates: [new Date('2017-11'), null],
       description: `
       I contributed to the organization's growth from 16 to over one hundred members. Currently, I engage in its activities as an honorary member.<br>
       <b>My responsibilities included:</b>
-        - Conducting internal workshops on HTML, CSS, and JavaScript technologies.
+        - Conducting workshops on frontend-related technologies and practices in Wroclaw’s Innovations Center.
         - Serving as a mentor for a complimentary beginner-level programming course <b>CodersCamp</b>, offering guidance and assistance to students.
         - Managing promotional and administrative activities related to recruitment for the organization.
         - Implementing projects based on the Scrum methodology.

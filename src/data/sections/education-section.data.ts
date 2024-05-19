@@ -1,6 +1,5 @@
 import type { EducationSection } from '@/types/sections/education-section.types';
 import type { ReadonlyDeep } from 'type-fest';
-import { website } from '../helpers/links';
 
 const educationSectionData = {
   config: {
@@ -14,9 +13,10 @@ const educationSectionData = {
       title: 'Information Technology',
       institution: 'Wrocław University of Science and Technology',
       image: import('@/assets/logos/wroclaw-university-of-technology.jpg'),
-      dates: [new Date('2017.10'), new Date('2023.01')],
-      description: "Engineer's degree. Specialization in Management Engineering – Information Technology in Business.",
-      links: [website({ url: 'https://pwr.edu.pl/' })],
+      dates: [new Date('2017.10'), new Date('2021.01')],
+      description:
+        "Engineer's degree. Specialization in Management Engineering – Information Technology in Business. Defense of engineering thesis in 2023.",
+      links: [],
     },
   ],
 } as const satisfies ReadonlyDeep<EducationSection>;
