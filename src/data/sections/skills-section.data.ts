@@ -5,23 +5,20 @@ import {
   react,
   sass,
   tailwindCss,
+  html,
   typescript,
   nextJs,
   reactQuery,
   css,
-  radixUI,
-  shadcn,
   rtl,
   jest,
   highcharts,
   mapbox,
   materialUI,
   reactFlow,
+  rwd,
   redux,
   storybook,
-  turborepo,
-  nx,
-  vitest,
   javascript,
   zustand,
   bootstrap,
@@ -33,17 +30,20 @@ import {
   vite,
   webpack,
   git,
-  salesforce,
-  tableau,
   photoshop,
   premierePro,
   capcut,
   agile,
   restApi,
   strategicDDD,
-  jamstack,
   atomicDesign,
   figma,
+  nestJs,
+  nodeJS,
+  expressJS,
+  firebase,
+  jotai,
+  mySQL,
 } from '../helpers/skills';
 
 const skillsSectionData = {
@@ -57,6 +57,7 @@ const skillsSectionData = {
     {
       title: 'General',
       skills: [
+        html({ level: 5 }),
         javascript({ level: 5 }),
         typescript({
           level: 5,
@@ -64,7 +65,9 @@ const skillsSectionData = {
         react({
           level: 5,
         }),
-        nextJs({ level: 4 }),
+        nextJs({ level: 3 }),
+        expressJS({ level: 3 }),
+        nodeJS({ level: 2 }),
       ],
     },
     {
@@ -78,8 +81,6 @@ const skillsSectionData = {
         bootstrap({ level: 4 }),
         materialUI({ level: 4 }),
         storybook({ level: 3 }),
-        radixUI({ level: 3 }),
-        shadcn({ level: 3 }),
       ],
     },
     {
@@ -92,7 +93,7 @@ const skillsSectionData = {
     },
     {
       title: 'Other',
-      skills: [highcharts(), reactFlow(), mapbox(), leaflet(), formik(), reactHookForm()],
+      skills: [highcharts(), reactFlow(), mapbox(), leaflet(), formik(), reactHookForm(), firebase()],
     },
     {
       title: 'Tools & Practices',
@@ -101,8 +102,7 @@ const skillsSectionData = {
         git(),
         vite(),
         webpack(),
-        salesforce(),
-        tableau(),
+        rwd(),
         figma(),
         photoshop(),
         premierePro(),
@@ -110,13 +110,12 @@ const skillsSectionData = {
         agile(),
         restApi(),
         strategicDDD(),
-        jamstack(),
         atomicDesign(),
       ],
     },
     {
       title: 'I want to learn',
-      skills: [turborepo(), nx(), vitest()],
+      skills: [mySQL(), jotai(), nestJs()],
     },
     {
       title: 'I speak',
@@ -125,6 +124,11 @@ const skillsSectionData = {
         { icon: 'circle-flags:us', name: 'English - C1' },
         { icon: 'circle-flags:es-variant', name: 'Spanish - A2' },
       ],
+    },
+    {
+      title: 'Domain Knowledge',
+      skills: [],
+      info: `Prywatnie od ponad 10 lat interesuję się tematyką zdrowego stylu życia, dietetyki, treningu siłowego oraz jestem związana z szeroko pojętą branżą fitness. W wolnym czasie lubię czytać ksiąki, głównie z zakresu psychologii. <br> 📚🏋️‍♀️🏃‍♀️🍏🥑 `,
     },
   ],
 } as const satisfies ReadonlyDeep<SkillsSection>;

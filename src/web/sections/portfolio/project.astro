@@ -2,6 +2,7 @@
 import { nanoid } from 'nanoid';
 import type { PortfolioSection, Project } from '@/types/sections/portfolio-section.types';
 import Description from '@/web/components/description.astro';
+import DownloadButton from '@/web/components/download-button.astro';
 import LabelledValue from '@/web/components/labelled-value.astro';
 import LinkButton from '@/web/components/link-button.astro';
 import Photo from '@/components/photo.astro';
@@ -14,7 +15,8 @@ export interface Props extends Project {
   screenshotsConfig?: PortfolioSection['config']['screenshots'];
 }
 
-const { dates, description, details, image, links, name, tagsList, screenshots, screenshotsConfig } = Astro.props;
+const { dates, description, details, image, links, name, tagsList, screenshots, screenshotsConfig, action } =
+  Astro.props;
 
 const alt = `${name} project thumbnail`;
 
@@ -34,6 +36,7 @@ const screenshotsTooltip = screenshotsConfig?.title || 'Screenshots';
             <div>
               <Typography variant="item-title">{name}</Typography>
               <Timestamp dates={dates} />
+              {action && <DownloadButton {...action} variant="small" />}
             </div>
             <div class="flex gap-2">
               {links.map((link) => <LinkButton {...link} />)}

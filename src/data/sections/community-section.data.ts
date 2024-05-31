@@ -1,6 +1,6 @@
 import type { CommunitySection } from '@/types/sections/community-section.types';
 import type { ReadonlyDeep } from 'type-fest';
-import { materialUI, figma, react, typescript, javascript, css } from '../helpers/skills';
+import { materialUI, figma, react, typescript, javascript, css, photoshop } from '../helpers/skills';
 import { website } from '../helpers/links';
 
 const communitySectionData = {
@@ -21,7 +21,7 @@ const communitySectionData = {
       description: `
       - <b>April 2023</b> - Winning the 6th Bydgoski Hackathon by creating an AI application that supports elderly people.
       - <b>November 2020</b> - giving a speech at the DevMastery Festival about methods for effective form validation in React.
-      - <b>November 2018</b> -  winning local and national editions of Let’s Code by Sii. We created event recommendation app directed at Wroclaw citizens.
+      - <b>November 2018</b> -  winning local and national editions of Let’s Code by Sii. We created a Progressive Web App (PWA) designed as an event recommendation tool for the citizens of Wroclaw.
       `,
       tagsList: {
         title: 'Technologies',
@@ -45,7 +45,7 @@ const communitySectionData = {
       `,
       tagsList: {
         title: 'Technologies',
-        tags: [css(), javascript(), typescript(), react()],
+        tags: [css(), javascript(), typescript(), react(), figma(), photoshop()],
       },
       links: [website({ url: 'https://coderscrew.pl/' })],
     },

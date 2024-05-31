@@ -12,7 +12,7 @@ module.exports = {
       white: colors.white,
       primary: colors.indigo,
       gray: colors.gray,
-      beige: '#DDB573',
+      beige: '#F91B68',
       beigeDark: '#cd9c4e',
       beigeDarker: '#94794f',
     },
@@ -30,7 +30,7 @@ module.exports = {
         show: 'show 225ms ease-in-out',
       },
       fontFamily: {
-        sans: ['Inter var', ...defaultTheme.fontFamily.sans],
+        sans: ['Montserrat', ...defaultTheme.fontFamily.sans],
       },
     },
   },

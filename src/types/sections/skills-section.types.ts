@@ -24,6 +24,7 @@ export interface SkillSet {
    * This way anyone viewing your resume will know what is the meaning of each level.
    */
   skills: Skill[] | LevelledSkill[];
+  info?: string;
 }
 
 export interface SkillsSection extends Section {
@@ -31,4 +32,5 @@ export interface SkillsSection extends Section {
    * Grouped lists of your skills.
    */
   skillSets: SkillSet[];
+  info?: string;
 }

@@ -29,8 +29,8 @@ const { action, config, description, details, fullName, image, links, role, tags
     <div class="flex w-full flex-col gap-5">
       <div class="flex w-full flex-col justify-between gap-2 sm:flex-row">
         <div class="w-full">
-          <Typography variant="main-title">{fullName}</Typography>
-          <Typography variant="main-subtitle">{role}</Typography>
+          <Typography variant="main-title" class="font-bold">{fullName}</Typography>
+          <Typography variant="main-subtitle" class="font-bold">{role}</Typography>
         </div>
         {
           links.length > 0 && (

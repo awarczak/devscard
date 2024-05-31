@@ -138,7 +138,7 @@ export const react = createSkillFactory({
 });
 
 export const reactQuery = createSkillFactory({
-  name: 'Tanstack Query',
+  name: 'React Query',
   icon: 'simple-icons:reactquery',
   iconColor: '#FF4154',
   url: 'https://tanstack.com/query',
@@ -193,11 +193,38 @@ export const jira = createSkillFactory({
   url: 'https://www.atlassian.com/software/jira',
 });
 
+export const rwd = createSkillFactory({
+  name: 'Responsive Web Design',
+  icon: 'mdi:responsive',
+  iconColor: '#2480F7',
+});
+
 export const css = createSkillFactory({
-  name: 'CSS',
+  name: 'CSS3',
   icon: 'skill-icons:css',
   iconColor: '#CC6699',
   // url: 'https://sass-lang.com/',
+});
+
+export const html = createSkillFactory({
+  name: 'HTML5',
+  icon: 'skill-icons:html',
+  iconColor: '#CC6699',
+  // url: 'https://sass-lang.com/',
+});
+
+export const jotai = createSkillFactory({
+  name: 'Jotai',
+  icon: 'logos:jotai',
+  iconColor: '#CC6699',
+  url: 'https://jotai.org/',
+});
+
+export const mySQL = createSkillFactory({
+  name: 'MySQL',
+  icon: 'logos:mysql',
+  iconColor: '#CC6699',
+  url: 'https://www.mysql.com/',
 });
 
 export const git = createSkillFactory({
@@ -242,6 +269,20 @@ export const agile = createSkillFactory({
   url: 'https://www.agilealliance.org/',
 });
 
+export const nodeJS = createSkillFactory({
+  name: 'Node.js',
+  icon: 'devicon:nodejs',
+  iconColor: '#2C3E50',
+  url: 'https://nodejs.org/',
+});
+
+export const expressJS = createSkillFactory({
+  name: 'Express.js',
+  icon: 'skill-icons:expressjs-light',
+  iconColor: '#2C3E50',
+  url: 'https://expressjs.com/',
+});
+
 export const restApi = createSkillFactory({
   name: 'REST API',
   icon: 'tabler:cloud-cog',
@@ -250,7 +291,7 @@ export const restApi = createSkillFactory({
 });
 
 export const strategicDDD = createSkillFactory({
-  name: 'Strategic DDD',
+  name: 'Strategic Domain-Driven Design',
   icon: 'ion:cube-outline',
   iconColor: '#007ACC',
   url: 'https://domainlanguage.com/ddd/',
@@ -334,7 +375,7 @@ export const adobePremiere = createSkillFactory({
 });
 
 export const ddd = createSkillFactory({
-  name: 'Domain Driven Design',
+  name: 'Domain-Driven Design',
   icon: 'ion:cube-outline',
   iconColor: '#CC6699',
 });

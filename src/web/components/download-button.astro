@@ -2,13 +2,25 @@
 import type { DownloadButton } from '@/types/shared';
 import Typography from './typography.astro';
 
-export interface Props extends DownloadButton {}
+export interface Props extends DownloadButton {
+  variant?: 'default' | 'small'; // Added a variant prop to toggle styles
+}
 
-const { url, downloadedFileName, label } = Astro.props;
+const { url, downloadedFileName, label, variant = 'default' } = Astro.props;
 
-const classes = /* tw */ {
-  main: 'inline-flex items-center px-4 h-10 rounded-md shadow-sm bg-beige select-none cursor-pointer',
-  hover: 'hover:bg-beigeDark',
+const baseStyles = /* tw */ `
+  transition-all font-extrabold inline-flex items-center rounded-full shadow-sm select-none cursor-pointer
+`;
+
+const classes = {
+  main:
+    variant === 'default'
+      ? /* tw */ `${baseStyles} px-4 h-10 bg-beige uppercase text-white`
+      : /* tw */ `${baseStyles} px-3 h-8 bg-white text-gray-700 border-gray-700 border-2 text-sm mt-2`,
+  hover:
+    variant === 'default'
+      ? /* tw */ 'hover:bg-white hover:border-beige hover:border-2 hover:text-white'
+      : /* tw */ 'hover:bg-white-500 hover:text-beige',
   active: 'active:translate-y-px',
   focus: 'focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500',
 };

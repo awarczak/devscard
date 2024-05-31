@@ -1,4 +1,13 @@
-import type { DateRange, Photo, LabelledValue, LinkButton, Section, TagsList, IconName } from '../shared';
+import type {
+  DateRange,
+  Photo,
+  LabelledValue,
+  LinkButton,
+  Section,
+  TagsList,
+  IconName,
+  DownloadButton,
+} from '../shared';
 
 interface Screenshot {
   /**
@@ -17,6 +26,11 @@ export interface Project {
    * Name of the project.
    */
   name: string;
+
+  /**
+   * [WEB] A button that will be used to download your resume.
+   */
+  action?: DownloadButton;
 
   /**
    * [WEB] Logo of the project.

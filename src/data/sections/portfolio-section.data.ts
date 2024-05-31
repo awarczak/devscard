@@ -19,7 +19,7 @@ import {
 
 const portfolioSectionData = {
   config: {
-    title: 'Commercial projects',
+    title: 'Selected commercial projects',
     slug: 'projects',
     icon: 'fa6-solid:rocket',
     visible: true,
@@ -52,13 +52,18 @@ const portfolioSectionData = {
     // },
     {
       name: 'Web apps for managing energy on the construction site',
-      dates: [new Date('2021-04'), new Date('2023-10')],
+      dates: [new Date('2021-04'), new Date('2023-11')],
       details: [
         { label: 'Team size', value: '7 people' },
-        { label: 'My role', value: ['Front-end Engineer'] },
-        { label: 'Company', value: 'Zaven (outsourcing)' },
+        { label: 'My role', value: ['React Developer'] },
+        { label: 'Company', value: 'Zaven (outsourcing - Ilder company)' },
         { label: 'Category', value: ['Web app'] },
       ],
+      action: {
+        label: 'Download Recommendation Letter',
+        url: '/recommendation_ilder.pdf',
+        downloadedFileName: 'Adrianna_Warczak_Recommendation_Letter_Ilder.pdf',
+      },
       description: `
       I played a key role in the collaborative development of a greenfield applications for the second-largest power grid owner in Norway, focusing on monitoring and managing energy on construction sites. These applications support Norway’s goal for an emission-free construction industry in major cities by 2030.<br>
       <b>My responsibilities included:</b>
@@ -86,11 +91,11 @@ const portfolioSectionData = {
     },
     {
       name: 'Landing page for the energy monitoring app',
-      dates: [new Date('2021-01'), new Date('2021-03')],
+      dates: [new Date('2021-03'), new Date('2021-05')],
       details: [
         { label: 'Team size', value: '1 person' },
-        { label: 'My role', value: ['Front-end Engineer'] },
-        { label: 'Company', value: 'Zaven (outsourcing)' },
+        { label: 'My role', value: ['React Developer'] },
+        { label: 'Company', value: 'Zaven (outsourcing - Ilder company)' },
         { label: 'Category', value: ['Website'] },
       ],
       pdfDetails: [],
@@ -110,7 +115,7 @@ const portfolioSectionData = {
       dates: [new Date('2019-11'), new Date('2020-12')],
       details: [
         { label: 'Team size', value: '5 people' },
-        { label: 'My role', value: ['Front-end Engineer'] },
+        { label: 'My role', value: ['React Developer'] },
         { label: 'Company', value: 'Zaven' },
         { label: 'Category', value: ['Web app'] },
       ],

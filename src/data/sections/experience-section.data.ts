@@ -1,7 +1,19 @@
 import type { ExperienceSection } from '@/types/sections/experience-section.types';
 import type { ReadonlyDeep } from 'type-fest';
 import { instagram, website } from '../helpers/links';
-import { adobePremiere, css, javascript, react, typescript, figma, ddd } from '../helpers/skills';
+import {
+  adobePremiere,
+  css,
+  javascript,
+  react,
+  typescript,
+  figma,
+  ddd,
+  nextJs,
+  tailwindCss,
+  materialUI,
+  html,
+} from '../helpers/skills';
 
 const experienceSectionData = {
   config: {
@@ -17,18 +29,18 @@ const experienceSectionData = {
       image: import('@/assets/logos/dd.png'),
       dates: [new Date('2024-02'), null],
       description: `
+      - Preparing graphic materials and assisting in video editing.
       - Reviewing materials for accuracy and relevance.
-      - Assisting in the preparation of graphic materials and video editing.
       - Responsible for preparing subtitles and transcriptions for videos.
       `,
       tagsList: {
         title: 'Tools',
-        tags: [ddd(), figma(), adobePremiere()],
+        tags: [figma(), adobePremiere(), ddd()],
       },
       links: [website({ url: 'https://domaindrivers.pl/' })],
     },
     {
-      role: 'Frontend Engineer',
+      role: 'React Developer',
       company: 'Zaven (remote)',
       image: import('@/assets/logos/zaven.png'),
       dates: [new Date('2019-11'), null],
@@ -45,19 +57,19 @@ const experienceSectionData = {
       `,
       tagsList: {
         title: 'Main Technologies',
-        tags: [react(), typescript()],
+        tags: [react(), typescript(), nextJs(), tailwindCss(), materialUI()],
       },
       links: [website({ url: 'https://zaven.co/' })],
     },
     {
-      role: 'Junior Frontend Engineer',
+      role: 'Junior Frontend Developer',
       company: 'Antologic (onsite)',
       image: import('@/assets/logos/antologic.png'),
       dates: [new Date('2019-09'), new Date('2019-11')],
       description: `- Involving in the development of a web application that enables hotel owners to efficiently manage their bookings.`,
       tagsList: {
         title: 'Main Technologies',
-        tags: [javascript(), css()],
+        tags: [javascript(), css(), html()],
       },
       links: [website({ url: 'https://antologic.com/' })],
     },

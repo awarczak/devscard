@@ -11,9 +11,8 @@ const config = {
     },
   },
   meta: {
-    title: 'Adrianna Warczak - Frontend Engineer',
-    description:
-      'Currently, I am seeking a project where I can leverage my knowledge of modern front-end architecture and DDD',
+    title: 'Adrianna Warczak - React Developer',
+    description: 'Currently, I am seeking a project where I can leverage my knowledge of modern front-end architecture',
     faviconPath: '/src/assets/profile-image.jpeg',
   },
   pdf: {
