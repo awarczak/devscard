@@ -25,7 +25,7 @@ const experienceSectionData = {
   jobs: [
     {
       role: 'E-learning Content Assistant for Domain Drivers course',
-      company: 'DevStyle (remote)',
+      company: 'DevStyle (100% remote)',
       image: import('@/assets/logos/dd.png'),
       dates: [new Date('2024-02'), null],
       description: `
@@ -41,7 +41,7 @@ const experienceSectionData = {
     },
     {
       role: 'React Developer',
-      company: 'Zaven (remote)',
+      company: 'Zaven (95% remote)',
       image: import('@/assets/logos/zaven.png'),
       dates: [new Date('2019-11'), null],
       description: `
