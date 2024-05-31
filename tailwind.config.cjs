@@ -12,9 +12,7 @@ module.exports = {
       white: colors.white,
       primary: colors.indigo,
       gray: colors.gray,
-      beige: '#F91B68',
-      beigeDark: '#cd9c4e',
-      beigeDarker: '#94794f',
+      pink: '#F91B68',
     },
     extend: {
       spacing: {
