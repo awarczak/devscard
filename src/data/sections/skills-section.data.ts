@@ -128,7 +128,7 @@ const skillsSectionData = {
     {
       title: 'Domain Knowledge',
       skills: [],
-      info: `Prywatnie od ponad 10 lat interesuję się tematyką zdrowego stylu życia, dietetyki, treningu siłowego oraz jestem związana z szeroko pojętą branżą fitness. W wolnym czasie lubię czytać ksiąki, głównie z zakresu psychologii. <br> 📚🏋️‍♀️🏃‍♀️🍏🥑 `,
+      info: `Prywatnie od ponad 10 lat interesuję się tematyką zdrowego stylu życia, dietetyki, treningu siłowego oraz jestem związana z szeroko pojętą branżą fitness. <br> 🏋️‍♀️🏃‍♀️🍏🥑🍑`,
     },
   ],
 } as const satisfies ReadonlyDeep<SkillsSection>;
