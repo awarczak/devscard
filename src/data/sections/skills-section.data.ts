@@ -128,7 +128,7 @@ const skillsSectionData = {
     {
       title: 'Domain Knowledge',
       skills: [],
-      info: `For over 10 years, I've had a personal interest in healthy living, dietetics, and strength training, and I'm also involved in the broader fitness industry." <br> 🏋️‍♀️🏃‍♀️🍏🥑🍑`,
+      info: `For over 10 years, I've had a personal interest in healthy lifestyle, nutrition, and strength training, and I'm also involved in the broader fitness industry." <br> 🏋️‍♀️🏃‍♀️🍏🥑🍑`,
     },
   ],
 } as const satisfies ReadonlyDeep<SkillsSection>;
