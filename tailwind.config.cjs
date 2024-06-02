@@ -13,6 +13,8 @@ module.exports = {
       primary: colors.indigo,
       gray: colors.gray,
       pink: '#F91B68',
+      darkGray: '#303030',
+      darkerGray: '#232323',
     },
     extend: {
       spacing: {

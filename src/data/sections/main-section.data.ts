@@ -21,8 +21,8 @@ const mainSectionData = {
   pdfDetails: [
     { label: 'Phone', value: '503 473 632' },
     { label: 'Email', value: 'awarczak.dev@gmail.com' },
+    { label: 'Website', value: 'awarczak.netlify.app', url: 'https://awarczak.netlify.app/' },
     { label: 'LinkedIn', value: '/in/adrianna-warczak', url: 'https://linkedin.com' },
-    // { label: 'Website', value: 'mark-freeman-personal-website.com', url: '/', fullRow: true },
   ],
   description: `I've been creating web applications for <b>6 years</b>. I’m experienced in developing frontend applications using various technical stacks within the React.js ecosystem. Throughout my career, I've primarily focused on <b>greenfield/early-stage products</b>, collaborating closely with business stakeholders.  Beyond my commercial projects, I actively engage in <b>non-profit organizations</b> related to web development, participate in conferences, and join hackathons. Some of my proudest achievements in these areas are listed in the sections below. Currently, I am seeking a project where I can leverage my knowledge of <b>modern front-end architecture</b> to create something that profoundly impacts people's lives.
   `,

@@ -57,7 +57,6 @@ const skillsSectionData = {
     {
       title: 'General',
       skills: [
-        html({ level: 5 }),
         javascript({ level: 5 }),
         typescript({
           level: 5,
@@ -65,6 +64,7 @@ const skillsSectionData = {
         react({
           level: 5,
         }),
+        html({ level: 4 }),
         nextJs({ level: 3 }),
         expressJS({ level: 3 }),
         nodeJS({ level: 2 }),
@@ -88,12 +88,19 @@ const skillsSectionData = {
       skills: [redux({ level: 3 }), reactQuery({ level: 3 }), apolloClient({ level: 3 }), zustand({ level: 1 })],
     },
     {
-      title: 'Testing',
-      skills: [jest(), cypress(), rtl()],
-    },
-    {
       title: 'Other',
-      skills: [highcharts(), reactFlow(), mapbox(), leaflet(), formik(), reactHookForm(), firebase()],
+      skills: [
+        jest(),
+        cypress(),
+        rtl(),
+        highcharts(),
+        reactFlow(),
+        mapbox(),
+        leaflet(),
+        formik(),
+        reactHookForm(),
+        firebase(),
+      ],
     },
     {
       title: 'Tools & Practices',
@@ -128,7 +135,7 @@ const skillsSectionData = {
     {
       title: 'Domain Knowledge',
       skills: [],
-      info: `For over 10 years, I've had a personal interest in healthy lifestyle, nutrition, and strength training, and I'm also involved in the broader fitness industry." <br> 🏋️‍♀️🏃‍♀️🍏🥑🍑`,
+      info: `For over 10 years, I've had a personal interest in healthy lifestyle, nutrition, and strength training. I'm also involved in the broader fitness industry. 🏋️‍♀️🏃‍♀️🍏🥑🍑`,
     },
   ],
 } as const satisfies ReadonlyDeep<SkillsSection>;
