@@ -11,6 +11,7 @@ import {
   reactQuery,
   css,
   rtl,
+  wcag,
   jest,
   highcharts,
   mapbox,
@@ -41,7 +42,6 @@ import {
   nodeJS,
   expressJS,
   firebase,
-  jotai,
   mySQL,
   threeJs,
   webGl
@@ -114,6 +114,7 @@ const skillsSectionData = {
         atomicDesign(),
         agile(),
         ddd(),
+        wcag(),
         figma(),
         photoshop(),
         premierePro(),

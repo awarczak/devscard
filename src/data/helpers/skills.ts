@@ -18,11 +18,19 @@ skill({ description: '...' }) — returns skill with a description displayed whe
 
 */
 
+
 export const apolloGraphql = createSkillFactory({
   name: 'Apollo GraphQL',
   icon: 'simple-icons:apollographql',
   iconColor: '#311C87',
   url: 'https://www.apollographql.com/',
+});
+
+export const wcag = createSkillFactory({
+  name: 'WCAG',
+  icon: 'iconoir:accessibility',
+  iconColor: '#025796',
+  url: 'https://www.w3.org/WAI/standards-guidelines/wcag/',
 });
 
 export const webGl = createSkillFactory({
