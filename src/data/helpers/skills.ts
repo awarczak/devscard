@@ -25,6 +25,19 @@ export const apolloGraphql = createSkillFactory({
   url: 'https://www.apollographql.com/',
 });
 
+export const webGl = createSkillFactory({
+  name: 'WebGL',
+  icon: 'simple-icons:webgl',
+  iconColor: '#950001',
+  url: 'https://get.webgl.org/',
+});
+export const threeJs = createSkillFactory({
+  name: 'Three.js',
+  icon: 'skill-icons:threejs-light',
+  iconColor: '#311C87',
+  url: 'https://threejs.org/',
+});
+
 export const astro = createSkillFactory({
   name: 'Astro',
   icon: 'simple-icons:astro',

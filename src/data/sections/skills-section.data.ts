@@ -34,8 +34,7 @@ import {
   premierePro,
   capcut,
   agile,
-  restApi,
-  strategicDDD,
+  ddd,
   atomicDesign,
   figma,
   nestJs,
@@ -44,6 +43,8 @@ import {
   firebase,
   jotai,
   mySQL,
+  threeJs,
+  webGl
 } from '../helpers/skills';
 
 const skillsSectionData = {
@@ -110,19 +111,18 @@ const skillsSectionData = {
         vite(),
         webpack(),
         rwd(),
+        atomicDesign(),
+        agile(),
+        ddd(),
         figma(),
         photoshop(),
         premierePro(),
         capcut(),
-        agile(),
-        restApi(),
-        strategicDDD(),
-        atomicDesign(),
       ],
     },
     {
       title: 'I want to learn',
-      skills: [mySQL(), jotai(), nestJs()],
+      skills: [mySQL(), nestJs(), threeJs(), webGl()],
     },
     {
       title: 'I speak',
@@ -131,12 +131,7 @@ const skillsSectionData = {
         { icon: 'circle-flags:us', name: 'English - C1' },
         { icon: 'circle-flags:es-variant', name: 'Spanish - A2' },
       ],
-    },
-    {
-      title: 'Domain Knowledge',
-      skills: [],
-      info: `For over 10 years, I've had a personal interest in healthy lifestyle, nutrition, and strength training. I'm also involved in the broader fitness industry. 🏋️‍♀️🏃‍♀️🍏🥑🍑`,
-    },
+    }
   ],
 } as const satisfies ReadonlyDeep<SkillsSection>;
 

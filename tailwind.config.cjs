@@ -12,7 +12,7 @@ module.exports = {
       white: colors.white,
       primary: colors.indigo,
       gray: colors.gray,
-      pink: '#F91B68',
+      blue: '#44B7C8',
       darkGray: '#303030',
       darkerGray: '#232323',
     },

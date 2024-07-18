@@ -38,6 +38,11 @@ const experienceSectionData = {
         tags: [figma(), adobePremiere(), ddd()],
       },
       links: [website({ url: 'https://domaindrivers.pl/' })],
+      action: {
+        label: 'Download Recommendation Letter',
+        url: '/recommendation_bottegaITMinds.pdf',
+        downloadedFileName: 'Adrianna_Warczak_Recommendation_Letter_Bottega_IT_Minds.pdf',
+      },
     },
     {
       role: 'React Developer',

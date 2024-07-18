@@ -1,4 +1,4 @@
-import type { DateRange, LinkButton, Photo, Section, TagsList } from '../shared';
+import type { DateRange, DownloadButton, LinkButton, Photo, Section, TagsList } from '../shared';
 
 export interface Job {
   /**
@@ -19,6 +19,10 @@ export interface Job {
    * **Display size**: 56x56px
    */
   image?: Photo;
+    /**
+   * [WEB] A button that will be used to download your resume.
+   */
+    action?: DownloadButton;
 
   /**
    * Date range when you were working in the company.

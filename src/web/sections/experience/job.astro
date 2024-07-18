@@ -6,10 +6,11 @@ import TagsList from '@/web/components/tags-list.astro';
 import Thumbnail from '@/web/components/thumbnail.astro';
 import Timestamp from '@/web/components/timestamp.astro';
 import Typography from '@/web/components/typography.astro';
+import DownloadButton from '@/web/components/download-button.astro';
 
 export interface Props extends Job {}
 
-const { role, company, dates, description, links, tagsList, image } = Astro.props;
+const { role, company, dates, description, links, tagsList, image, action } = Astro.props;
 ---
 
 <div class="flex flex-col gap-3">
@@ -22,6 +23,7 @@ const { role, company, dates, description, links, tagsList, image } = Astro.prop
         <Timestamp dates={dates} />
       </div>
     </div>
+  
     {
       links.length > 0 && (
         <div class="flex flex-wrap gap-3 sm:flex-nowrap">
@@ -33,5 +35,8 @@ const { role, company, dates, description, links, tagsList, image } = Astro.prop
     }
   </div>
   <Description content={description} class="mb-3" />
+  <div class="flex w-96">
+   {action && <DownloadButton {...action} variant="small" />}
+   </div>
   <TagsList {...tagsList} />
 </div>
